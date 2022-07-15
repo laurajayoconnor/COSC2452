@@ -1,11 +1,6 @@
 def eggsample():
 
-    egg_collection = ["Little Egg", "Big Egg", "Easter Egg"]
-
-    the_basket = [eggs for eggs in egg_collection]
-
-    print(the_basket)
-
+    # Typical way
     egg_collection = ["Little Egg", "Big Egg", "Easter Egg"]
 
     the_basket = []
@@ -15,6 +10,13 @@ def eggsample():
 
     print(the_basket)
 
+    egg_collection2 = ["Little Egg", "Big Egg", "Easter Egg"]
+
+    the_basket2 = [eggs2 for eggs2 in egg_collection2]
+
+    print(the_basket2)
+
+
 def yeehawgaol():
 
     message = "You're trapped here unless you know the password. What is the password?\n"
@@ -22,12 +24,16 @@ def yeehawgaol():
     while user_input := input(message).lower() != "howdy":
         print("No escape for you!")
 
-    message = "You're trapped here unless you know the password. What is the password?\n"
+    print("Gah, you escaped!\n********")
 
-    user_input2 = input(message)
+    message2 = "You're trapped here unless you know the password. What is the password?\n"
+
+    user_input2 = input(message2)
     while user_input2 != "howdy":
         print("No escape for you!")
-        user_input2 = input(message)
+        user_input2 = input(message2)
+
+    print("Gah, you escaped!\n********")
 
 eggsample()
 yeehawgaol()
